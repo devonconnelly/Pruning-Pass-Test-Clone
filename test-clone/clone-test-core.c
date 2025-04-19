@@ -37,7 +37,6 @@ int io_function(int v) {
     return v;
 }
 
-// Likely to be NOPRUNE (loop that can be vectorized)
 CLONE_ATTRIBUTE
 int vector_function(int16_t *buff, size_t samples) {
     int max = 0;
